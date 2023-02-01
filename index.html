@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js-biglietto-treno-form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 
 <body>
     
     <div id="formIn">
+        <input type="text" name="nomCog" class="" value="Nome e Cognome">
         <input type="text" name="nKm" class="" value="n. Km">
         <select name="sconto" class="" id="">
             <option value="ns">-- SCONTO --</option>
@@ -18,6 +20,31 @@
             <option value="o65">Over 65</option>
         </select>
         <input type="button" class="" value="Calcola">
+    </div>
+
+    <div id="scontrino">
+        <ul>
+            <li>
+                <span>N. km: </span>
+                <span id="sKm"></span>
+            </li>
+            <li>
+                <span>Nome e Cognome: </span>
+                <span id="sNome"></span>
+            </li>
+            <li>
+                <span id="prezzoBarrato">Prezzo Base: </span>
+                <span id="sPrezzons"></span>
+            </li>
+            <li>
+                <span id="scontoHidden">Sconto: </span>
+                <span id="sSconto"></span>
+            </li>
+            <li>
+                <span id="prezzoHidden">Prezzo finale: </span>
+                <span id="sPrezzo"></span>
+            </li>
+        </ul>
     </div>
 
     <script src="./js/app.js"></script>

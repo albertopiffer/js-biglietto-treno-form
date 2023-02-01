@@ -1,0 +1,35 @@
+/** {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}*/
+
+img {
+	max-width: 100%;
+}
+
+ul,
+ol,
+menu {
+	list-style: none;
+}
+
+/****************************************/
+
+#scontrino {
+    padding: 10px;
+    border: 1px solid black;
+    display: none;
+}
+
+#scontrino ul{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#scontrino li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;    
+}
