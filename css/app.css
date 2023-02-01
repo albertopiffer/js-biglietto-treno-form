@@ -1,8 +1,8 @@
-/** {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}*/
+}
 
 img {
 	max-width: 100%;
@@ -16,16 +16,25 @@ menu {
 
 /****************************************/
 
+#formIn {
+    padding: 10px;
+    margin: 10px;
+}
+
 #scontrino {
     padding: 10px;
     border: 1px solid black;
     display: none;
+
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
 }
 
 #scontrino ul{
     display: flex;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 20px;
 }
 
 #scontrino li {
